@@ -40,11 +40,14 @@ function App() {
 
     if (e.target.value === '') {
       setFilterInput()
+      
 
     } else {
 
       const URL = `https://rickandmortyapi.com/api/location?name=${e.target.value}`
 
+      const uListId = document.querySelector("#ulistId")
+      uListId.style.visibility = "visible";
       axios.get(URL)
         .then(res => setFilterInput(res.data.results))
         .catch(err => console.log(err))
@@ -58,7 +61,7 @@ function App() {
           <img src={logo} alt="" />
         </div>
         <form onSubmit={handleSubmit}>
-          <input className='textBox' id='idLocation' onChange={handleChange} type="text" placeholder='Enter another number from 1 to 126' />
+          <input className='textBox' id='idLocation' onChange={handleChange} type="text" placeholder='Enter another location' />
           <Filter filterInput={filterInput} setSearchInput={setSearchInput} />
         </form>
       </div>

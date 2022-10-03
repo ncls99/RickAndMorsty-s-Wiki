@@ -131,7 +131,6 @@ span {
   width: 10px;
   height: 10px;
   border-radius: 2.5px;
-  background-color: green;
 }
 
 form {
@@ -162,6 +161,7 @@ form {
   position:relative;
   overflow: scroll;
   max-height: 300px;
+  visibility: hidden;
 }
 
 .ulFilter li:hover {

@@ -9,7 +9,12 @@ const CardResident = ({ url }) => {
         axios.get(url)
             .then(res => setResident(res.data))
     }, [])
-
+        let colorStatus = "Gray"
+        if(resident?.status === "Dead" ){
+            colorStatus = "Red"
+        }else if(resident?.status === "Alive") {
+            colorStatus = "Green"
+        }
 
     return (
         <div className='card'>
@@ -19,7 +24,7 @@ const CardResident = ({ url }) => {
                 </div>
                 <div className='statusCard'>
                     <div className='circle'>
-                        <div className='circleStatus'></div>
+                        <div className='circleStatus' style={{backgroundColor: colorStatus}}></div>
                         <span>{resident?.status}</span>
                     </div>
                 </div>

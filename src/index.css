@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Mitr', sans-serif;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.headSection{
+  width: 100%;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 150px 20px 50px 20px;
+  background-color: aquamarine;
+}
+
+.bodySection{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #154a50;
+}
+
+.infoBox{
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  background-color: #113b41;
+  color: white;
+  border-radius: 3px;
+  border: 1px solid black;
+  padding: 20px;
+  gap: 10px;
+}
+
+.locationName{
+  text-align: center;
+}
+
+span {
+  font-weight: bold;
+}
+
+.locationInfoUl {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cardsSection{
+  max-width: 610px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.imgBox{
+  width: 300px;
+  height: 300px;
+}
+.imgBox{
+  width: 100%
+}
+
+.card{
+  width: 300px;
+  height: 454px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 3px;
+  overflow: hidden;
+  color: white;
+  background-color: #113b41;
+}
+
+.cardInfoBox {
+  padding: 10px;
+}
+
+.cardInfoBox h3 {
+  border-top: 1px solid white;
+}
+
+.statusCard {
+  display: flex;
+  padding-right: 5px;
+  flex-direction: row-reverse;
+  top: -267px;
+  left: -10px;
+  position: relative;
+  background-color: #113b41;
+  width: 130px;
+  border-radius: 10px;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 10px;
+}
+
+.circleStatus {
+  width: 10px;
+  height: 10px;
+  border-radius: 2.5px;
+  background-color: green;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+}
+
+.textBox {
+  width: 480px;
+  border: 0;
+  outline: none;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+
+.ulFilter {
+  background-color: white;
+  width: 480px;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 3px;
+  position:relative;
+  overflow: scroll;
+  max-height: 300px;
+}
+
+.ulFilter li:hover {
+  background-color: #113b41;
+  color: white;
+  transition-duration: 0.5s;
+}
+
+.ulFilter::-webkit-scrollbar {
+  width: 8px;     
+  height: 8px;    
+}
+
+.ulFilter::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+

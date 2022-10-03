@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import './App.css'
+import logo from './assets/images/Rick-And-Morty-Logo.png'
 import CardResident from './components/CardResident'
 import ErrorMessage from './components/ErrorMessage'
 import Error from './components/ErrorMessage'
@@ -53,7 +54,9 @@ function App() {
   return (
     <div className="App">
       <div className='headSection'>
-        <h1 className='mainTitle'>Rick and morty Wiki</h1>
+        <div className='mainTitle'>
+          <img src={logo} alt="" />
+        </div>
         <form onSubmit={handleSubmit}>
           <input className='textBox' id='idLocation' onChange={handleChange} type="text" placeholder='Enter another number from 1 to 126' />
           <Filter filterInput={filterInput} setSearchInput={setSearchInput} />

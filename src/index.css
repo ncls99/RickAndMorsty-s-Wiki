@@ -10,7 +10,7 @@
 li {
   list-style: none;
   text-decoration: none;
-  text-align: center;
+  text-align: left;
 }
 
 .headSection{
@@ -36,6 +36,7 @@ li {
 }
 
 .bodySection{
+  max-height: 100%;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -72,7 +73,7 @@ span {
 }
 
 .cardsSection{
-  max-width: 610px;
+  max-width: 920px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -93,19 +94,22 @@ span {
   height: 454px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   border-radius: 3px;
   overflow: hidden;
   color: white;
   background-color: #113b41;
+  border: 1px solid black;
+  box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.5);
+  
 }
 
 .cardInfoBox {
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .cardInfoBox h3 {
-  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 .statusCard {
